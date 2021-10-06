@@ -1,0 +1,784 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(100deg,#ECFEFA,#BEE9FF, #DBEAFF, #F3DBFF);
+}
+.root{
+ 
+  height: auto;
+   
+    position: relative;
+    padding: 0 100px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.header__container{
+    position: relative;
+    display: flex;
+    width: 100%;
+ 
+}
+.nav__brand{
+    display: flex;
+  
+    
+}
+ .brand__logo{
+     margin-top: 32px;
+
+ }
+.brand__text{
+    width: 171px;
+    height: 30px;
+    font-weight:700;
+    font-size: 25px;
+    line-height: 30px;
+  margin-top: 65px;
+  margin-left: 16px;
+  text-align: center;
+   letter-spacing: 0.02rem;
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
+
+}
+.nav{
+    margin-left: auto;
+}
+ .nav__list{
+     display: flex;
+ }
+ 
+ .nav__item{
+    margin: 58px 30px 0 0 ;
+   }
+ 
+ .nav__link{
+    box-sizing: border-box;
+      /* padding: 0 px; */
+      text-align: center;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    letter-spacing: 0.04em;
+
+    }
+    .nav__link:hover{
+        border: 1px solid black;
+        border-radius: 10px;
+        padding:3px
+    }
+    .header__toggle,.header__close{
+        display: none;
+
+    }
+    .header__text{
+      
+        position: absolute;
+        float: left;
+        margin-top: 114px;
+        box-sizing: border-box;
+        z-index: 9;
+    }
+    .header__img {
+       position: relative; 
+       background-image: url('images/header-img.png');
+       background-size: cover;
+       background-repeat: no-repeat;
+       width:407px;
+       height: 578px;
+       margin-top:-9px;
+       margin-left: auto;
+       margin-right: 40px;
+       
+       
+    }
+    .header__bottom{
+        position: absolute;
+        justify-content: center;
+        margin-top: 486px;
+        margin-left: 102px;
+        margin-right: 21px;
+        /* filter: blur(52px); */
+    }
+    .header__text>h1 {
+        width: 620px;
+        font-weight: 700;
+        font-style: normal;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 54px;
+        line-height: 64.61px;
+    }
+    .header__text >p{
+        margin-top: 20px;
+        width: 509px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 23.5px;
+        line-height: 29px;
+        letter-spacing: 0.02em;
+        
+    
+    }
+    .header__btn{
+   width: 234px;
+   height: 65px;
+   background-color: #00445B;
+   margin-top: 40px;
+   
+    }
+    .header__btn:hover ,.header__btn:hover>*{
+        background-color: #ECFEFA;
+        color: black;
+    }
+    .header__btn-link{
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 14px;
+font-weight: bold;
+font-style: normal;
+letter-spacing: 0.02em;
+color: white;
+width: 138px;
+    }
+    #popup{
+  
+        margin-top: 15px;
+        position: fixed;
+        top: -100%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        z-index: 1000;
+        width: 657px;
+        height: 687px;
+        background-color:#E5E5E5;
+        visibility: hidden;
+        transition: 0.8s;
+
+    }
+    #popup.active{
+        visibility: visible;
+        top: 50%;
+    }
+    #popup .content{
+        position: relative;
+        width: 100%;
+  
+      justify-content: center;
+      align-items: center;
+
+    }
+    .popup__brand{
+        position: relative;
+        width: 657px;
+        height: 140px;
+        background-color: #00445B;
+        display: flex; 
+        align-items: center;
+    }
+    .popup__brand-logo{
+      margin-left: 183px;
+
+    }
+    .popup__brand-text {
+        margin-left: 20px;
+        color: white;
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        font-style: normal;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+    .popup__close{
+        position: absolute;
+        font-size: 24px;
+        top: 20px;
+        right:20px;
+        color: white;
+    }
+    .popup__top-text  {
+        position: absolute;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 500;
+        font-size: 43px;
+        font-style: normal;
+        line-height: 52.42px;
+        letter-spacing: 0.02em;
+        margin:50px 160px 0 160px;
+        width: 337px;
+        height: 52px;
+        justify-content: center;
+        align-items: center;
+      
+    
+        
+    }
+   
+    .popup__name{
+        box-sizing: border-box;
+        position: absolute;
+        display: block;
+        justify-content: center;
+        width: 457px;
+        height: 65px;
+        margin: 182px 100px 0 100px;
+        border: 0.5px solid #646464;
+    }
+    .popup__number{
+
+        position: absolute;
+        display: block;
+        justify-content: center;
+        width: 457px;
+        height: 65px;
+        margin: 287px 100px 0 100px;
+        border: 0.5px solid #646464;
+    }
+    .popup__name::placeholder,.popup__number::placeholder{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 17.07px;
+        letter-spacing: 0.02em;
+        padding-left: 22px;
+
+    }
+    .popup__submit{
+        position: absolute;
+        width: 234px;
+        height: 65px;
+        left: 323px;
+        top: 572px;
+        background-color: #00445B;
+      
+    }
+      .popup__submit-link {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.02em;
+        color: white;
+    }
+
+
+
+
+
+    /* Media query */
+    @media  screen and (max-width:920px){
+       
+
+        @media screen and (max-width:920px) and (min-width:720px){
+                .header__img{
+                width: 16.5rem;
+                height: 21.5rem;
+                margin-right: 35%;
+                opacity: 0.9;
+                margin-top: 40px;
+                }
+                .header__text{
+                  margin-left: 110px;
+                  margin-top: 370px;
+                 
+                }
+                .header__text>h1{
+                    width: 500px;
+                    font-size:35px ;
+                    letter-spacing: 1.2px;
+                     padding-right:30px ;
+                     line-height: 45px;
+                    
+
+                }
+                .header__text >p{
+                    font-size: 16px;
+                    letter-spacing: 0.8px;
+                    opacity: 0.6;
+                    margin-top: 15px;
+
+                }
+                .header__btn{
+                    width: 220px;
+                    height: 60px;
+                    margin-top: 30px;
+                }
+                .brand__logo{
+                    width: 80px;
+                    height: 80px;
+                  }
+                  .brand__text{
+                      margin-top: 58px;
+                      font-size: 21px;
+                      margin-left:1px;
+                  }
+                  .header__bottom{
+            margin-right: 35%;
+            margin-top: 295px;
+            margin-left: 45px;
+        }
+        #popup{
+            width: 500px;
+            height:  500px;
+            margin-top: -10px;
+
+        }
+        .popup__brand{
+            width: 500px;
+            height: 110px;
+        }
+        .popup__brand-logo{
+            width: 80px;
+            height: 80px;
+            margin-left: 100px;
+        }
+        .popup__top-text{
+            margin: 20px 100px 0 100px;
+            font-size: 40px;
+        }
+        .popup__name{
+            width: 380px;
+            height: 55px;
+            margin:140px 60px 0 60px
+        }
+        .popup__number{
+            width: 380px;
+            height: 55px;
+            margin:220px 60px 0 60px
+        }
+        .popup__submit{
+            width: 200px;
+            height: 50px;
+            top: 430px;
+            left: 240px;
+        }
+       
+                
+        } 
+        
+     
+        .header{
+            justify-content: space-between;
+
+        }
+       .root{
+           padding: 0 50px;
+       } 
+       .brand__logo img{
+           width: 50px;
+           height: 50px;
+           margin-top: 20px;
+       }
+       .header__toggle{
+           border: 0.5px solid;
+           background-color: #025a77;;
+           border-radius: 50%;
+           padding: 8px;
+           display: inline;
+           color:white;
+           font-size: 30px;
+           margin-left: auto;
+           margin-top: 40px;
+       }
+       .header__close{
+           position: absolute;
+           font-size: 50px;
+           display: block;
+           right: 24px;
+           border-radius: 50%;
+         
+       }
+      .nav{
+         position: fixed;
+        
+          top: 0;
+          background-color: rgb(111, 90, 126);
+          opacity: 0.9;
+          right: -100%;
+          color: white;
+          width: 50%;
+          height: 80vh;
+          z-index: 100;
+          transition: 1s;
+          border-radius: 0 0 0 50%;
+          padding: 20px 0;
+        
+
+      }
+      .nav__list{
+          display: flex;
+          flex-direction: column;
+          
+
+      }
+      .nav__item{
+          margin:1rem auto;
+          color: white;
+      }
+      .nav__link{
+          color: white;
+          font-size: 20px;
+      }
+      .show{
+          right: 0;
+          
+      }
+    }
+    @media  screen and (max-width:1130px) and (min-width:920px) {
+          
+        .root{
+              padding: 0 55px;
+          }
+          .brand__logo{
+              width: 80px;
+              height: 80px;
+            }
+            .brand__text{
+                margin-top: 58px;
+                font-size: 21px;
+                margin-left:1px;
+            }
+
+            .nav__item{
+                margin: 50px 25px 0 0;
+            }
+            .nav__link{
+                letter-spacing: 0.02em;
+                font-weight: 520;
+               font-size: 11.5px;
+            }
+
+    }
+    /* 720px and  520px */
+       
+@media screen  and (max-width:720px) and (min-width:520px) {
+         .brand__logo{
+             width: 70px;
+             height: 70px;
+
+         }
+         .brand__text{
+             font-size: 19px;
+             margin-top: 50px;
+             margin-left: -2px;
+         }
+         .header__toggle{
+             padding: 8px;
+             font-size: 25px;
+            margin-right: -5px;
+             
+         }
+         .header__close{
+             right:15px;
+             top: 13px;
+             font-size: 40px;
+         }
+         .header__img{
+             width: 15rem;
+             height: 19rem;
+             margin-left: 29%;
+             margin-top: 35px;
+         }
+         .header__bottom{
+            
+            margin-top: 260px;
+            margin-left: 25px;
+          
+    }
+    .header__text{
+        margin-top: 335px;
+        margin-left: 100px;
+    }
+    .header__text>h1{
+        font-size: 31px;
+        width: 300px;
+        line-height: 37px;
+        font-weight: 500;
+    }
+    .header__text>p{
+        font-size: 13px;
+        width: 300px;
+        margin-top: 10px;
+        opacity: 0.8;
+        line-height: 17px;
+    }
+    .header__btn{
+        width: 170px;
+        height: 38px;
+        margin-top: 15px;
+
+    }
+    .header__btn-link{
+        font-size: 13px;
+    }
+    #popup{
+        width:370px;
+        height:400px;
+    }
+    .popup__brand{
+        width: 370px;
+        height: 80px;
+    }
+    .popup__brand-logo{
+        width: 60px;
+        height: 60px;
+        margin-left: 50px;
+    }
+    .popup__brand-text{
+        font-size: 18.5px;
+    }
+    .popup__close{
+        top: 10px;
+        right: 10px
+    }
+    .popup__top-text{
+        font-size: 30px;
+        margin: 15px 80px 0 80px;
+    }
+    .popup__name{
+        width: 290px;
+        height: 40px;
+        margin: 110px 40px 0 40px;
+    }
+    .popup__number{
+        width: 290px;
+        height: 40px;
+        margin: 170px 40px 0 40px;
+    }
+    .popup__submit{
+        width: 140px;
+        height: 38px;
+        top: 340px;
+        left: 190px;
+    }
+
+    }
+    @media screen and (max-width:520px) and (min-width:400px){
+        
+        .root{
+            padding: 0 30px;
+        }
+        .brand__logo{
+            width: 55px;
+            height: 55px;
+            margin-top: 18px;
+        }
+        .brand__text{
+            font-size: 17px;
+            margin-top: 25px;
+            margin-left:-12px ;
+
+        }
+        .header__toggle{
+            margin-top: 13px;
+            font-size: 25px;
+            margin-right: -10px;
+        }
+        .header__img{
+            width: 10.5rem;
+            height: 14.5rem;
+            margin-left: 25%;
+            margin-top: 18px;
+        }
+        .header__text{
+            margin-top: 230px;
+            margin-left: 40px;
+        }
+        .header__text>h1{
+            font-size: 24px;
+            width: 300px;
+            line-height: 30px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+        }
+        .header__text>p{
+            font-size: 11px;
+            line-height: 13px;
+            width: 250px;
+            margin-top: 8px;
+        }
+        .header__bottom{
+            margin-top: 200px;
+            margin-left: 52px;
+            width: 100px;
+            height: 50px;
+        }
+        .header__btn{
+            margin-top: 10px;
+            width: 140px;
+            height: 35px;
+
+        }
+        #popup{
+            width:300px;
+            height:400px;
+            margin-top:-50px;
+        }
+        .popup__brand{
+            width: 300px;
+            height: 80px;
+        }
+        .popup__brand-logo{
+            width: 60px;
+            height: 60px;
+            margin-left: 50px;
+        }
+        .popup__brand-text{
+            font-size: 18.5px;
+        }
+        .popup__close{
+            top: 10px;
+            right: 10px
+        }
+        .popup__top-text{
+            font-size: 30px;
+            margin: 15px 80px 0 80px;
+        }
+        .popup__name{
+            width: 250px;
+            height: 40px;
+            margin: 110px 20px 0 20px;
+        }
+        .popup__number{
+            width: 250px;
+            height: 40px;
+            margin: 170px 20px 0 20px;
+        }
+        .popup__submit{
+            width: 110px;
+            height: 35px;
+            top: 340px;
+            left: 160px;
+        }
+        .popup__submit-link{
+            font-size: 12px;
+        }
+
+    }
+    @media screen and (max-width:400px) {
+        .root{
+            padding: 0 29px;
+        }
+        .brand__logo{
+            width: 53px;
+            height: 53px;
+            margin-top: 20px;
+        }
+        .brand__text{
+            font-size: 17px;
+            margin-top: 32px;
+            margin-left:-15px ;
+
+        }
+        .header__toggle{
+            margin-top: 20px;
+            font-size: 25px;
+            margin-right: -10px;
+            padding: 8px;
+        }
+        .header__close{
+            right: 8px;
+            top: 8px;
+            font-size: 35px;
+        }
+        
+        .header__img{
+            width: 10.5rem;
+            height: 14.5rem;
+            margin-left: 22%;
+            margin-top: 30px;
+        }
+        .header__text{
+            margin-top: 245px;
+            margin-left: 20px;
+        }
+        .header__text>h1{
+            font-size: 24px;
+            width: 250px;
+            line-height: 30px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+        }
+        .header__text>p{
+            font-size: 11px;
+            line-height: 13px;
+            width: 250px;
+            margin-top: 12px;
+            opacity: 0.8;
+        }
+        .header__bottom{
+            margin-top: 200px;
+            margin-left: 45px;
+            width: 120px;
+            height: 50px;
+            opacity: 0.9;
+        }
+        .header__btn{
+            margin-top: 15px;
+            width: 140px;
+            height: 35px;
+
+        }
+        #popup{
+            width:300px;
+            height:400px;
+            margin-top:-50px;
+        }
+        .popup__brand{
+            width: 300px;
+            height: 80px;
+        }
+        .popup__brand-logo{
+            width: 60px;
+            height: 60px;
+            margin-left: 50px;
+        }
+        .popup__brand-text{
+            font-size: 18.5px;
+        }
+        .popup__close{
+            top: 10px;
+            right: 10px
+        }
+        .popup__top-text{
+            font-size: 30px;
+            margin: 15px 80px 0 80px;
+        }
+        .popup__name{
+            width: 250px;
+            height: 40px;
+            margin: 110px 20px 0 20px;
+        }
+        .popup__number{
+            width: 250px;
+            height: 40px;
+            margin: 170px 20px 0 20px;
+        }
+        .popup__submit{
+            width: 110px;
+            height: 35px;
+            top: 340px;
+            left: 160px;
+        }
+        .popup__submit-link{
+            font-size: 12px;
+        }
+        
+    }
+
+
+

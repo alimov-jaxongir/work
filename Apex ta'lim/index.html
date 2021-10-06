@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX ta'lim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="root">
+  <header class="header">
+    <div class="header__container">
+        <div class="nav__brand">
+         <img src="images/brand_logo.png" class="brand__logo" width="100px" height="100px" alt="">
+         <h2 class="brand__text">APEX TA'LIM</h2>
+        </div>
+        <nav class="nav"  id="nav-menu">
+            <ion-icon name="close-outline" class="header__close" id="close-menu"></ion-icon>
+
+          <ul class="nav__list">
+             <li class="nav__item"> <a href="" class="nav__link">Yangiliklar</a></li>
+             <li class="nav__item"> <a href="" class="nav__link">Kurslar </a></li>
+             <li class="nav__item"> <a href="" class="nav__link">Ustozlar</a></li>
+             <li class="nav__item"> <a href="" class="nav__link">Fotolavhalar</a></li>
+             <li class="nav__item"> <a href="" class="nav__link">Videolavhalar</a></li>
+             <li class="nav__item"> <a href="" class="nav__link">Natijalar</a></li>
+             <li class="nav__item"> <a href="" class="nav__link">Izohlar</a></li>
+             <li class="nav__item"> <a href="" class="nav__link">Aloqa</a></li>
+           </ul>
+        </nav>
+        <ion-icon name="menu-outline" class="header__toggle" id="toggle-menu"></ion-icon>
+    </div>
+    <div class="header__text">
+        <h1>Talaba bo'lishingizga  albatta ishonamiz</h1>
+    <p>Shaxmatda yo‘lga chiqqan piyoda, bir kun kelib albatta vazir bo’ladi.</p>
+    <button  onclick="popupToggle();" class="header__btn" id="mm"><a href="#mm" class="header__btn-link" >Kursga yozilish</a></button>
+    
+    <div id="popup">
+         <div class="content">
+             <div class="popup__brand">
+                <img src="images/popup-img.png" class="popup__brand-logo" width="100px" height="100px" alt="">
+                <h3 class="popup__brand-text">APEX TA'LIM</h3>
+                <ion-icon onclick="popupToggle();" name="close-outline" class="popup__close" id="close-menu"></ion-icon>
+            </div>
+            <h1 class="popup__top-text">Kursga yozilish</h1>
+            <div class="popup__input">
+                <input type="text" class="popup__name" placeholder="Ism va familyangizni yozing" name="" id="">
+                <input type="number" class="popup__number" placeholder="Telefon raqamingizni yozing" name="" id="">
+            </div>
+             <button class="popup__submit"> <a href="" class="popup__submit-link">Kursga yozilish</a></button>
+         </div>
+     </div>
+
+</div>
+    <div class="header__img">
+    
+     <img src="images/header-img1.png" class="header__bottom"   width="284px" height="135px" alt="">
+    </div>
+  </header>
+
+
+  <!-- Pastga utkazma -->
+  <div style="width: 100%;height: 1000px;"></div>
+    </div>
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
